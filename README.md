@@ -143,3 +143,118 @@ namespace ConsoleApp1
         //    person.pet.Add(wind);
     }
 }
+```
+## 
+```
+﻿using System;
+using System.Collections;
+using System.Threading;
+
+
+using static System.Console; // using class
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int a = 30;
+            //string result = a == 30 ? "참" : "거짓"; 
+            //WriteLine(result);
+
+            //string result = (10 % 2) == 0 ? "짝수" : "홀수";
+            //WriteLine(result);
+
+
+            //ArrayList a = null;
+            //a = new ArrayList();
+
+            //a?.Add("야구");   // == if(a != null) a.Add("야구");
+            //a?.Add("축구");
+            //WriteLine($"Count : {a?.Count}");
+            //WriteLine($"{a?[0]}");
+            //WriteLine($"{a?[1]}");
+
+
+            //int a = 1;
+            //WriteLine("a      : {0:D5} (0x{0:X8})", a);
+            //WriteLine("a << 1 : {0:D5} (0x{0:X8})", a << 1);
+            //WriteLine("a << 2 : {0:D5} (0x{0:X8})", a << 2);
+            //WriteLine("a << 3 : {0:D5} (0x{0:X8})", a << 5);
+
+            //int b = 255;
+            //WriteLine("b      : {0:D5} (0x{0:X8})", b);
+            //WriteLine("b >> 1 : {0:D5} (0x{0:X8})", b >> 1);
+            //WriteLine("b >> 2 : {0:D5} (0x{0:X8})", b >> 2);
+            //WriteLine("b >> 3 : {0:D5} (0x{0:X8})", b >> 5);
+
+
+            //int? b = null;
+            //WriteLine($"{b ?? 10}");
+
+            //string str2 = null;
+            //WriteLine($"{str2 ?? "0"}");
+
+            //string str = null;
+            //if (str == null)
+            //    Write("0");
+            //else
+            //    Write($"{str}");
+
+            //int a = -5;
+            //if (a < 0)
+            //    WriteLine("음수");
+            //else if (a == 0)
+            //    WriteLine("0");
+            //else
+            //    WriteLine("양수");
+
+            //int a = int.Parse(ReadLine());
+            //if (a % 2 == 0)
+            //    WriteLine("짝수");
+            //else
+            //    WriteLine("홀수");
+
+            //int number = int.Parse(ReadLine());
+            //if (number > 0 && number % 2 == 0)
+            //    WriteLine("0보다 큰 짝수");
+            //else if (number > 0)
+            //    WriteLine("0보다 큰 홀수");
+            //else
+            //    WriteLine("0보다 작거나 같은 수.");
+
+            //switch (조건식)
+            //{
+            //    case 상수1:
+            //        break;
+            //    case 상수2:
+            //        break;
+            //    case 상수3:
+            //        break;
+            //    default: // 생략 가능
+            //        break;
+            //}
+
+            //object obj = null;
+            //string s = ReadLine();
+            //if (int.TryParse(s, out int out_i))
+            //    obj = out_i;
+            //else if (float.TryParse(s, out float out_f))
+            //    obj = out_f;
+            //else
+            //    obj = s;
+
+            //switch(obj)
+            //{
+            //    case int i:
+            //        WriteLine($"{i}는 int 형식입니다.");
+            //        break;
+            //    case float f:
+            //        WriteLine($"{f}는 float 형식입니다.");
+            //        break;
+            //    default:
+            //        WriteLine($"{obj}는 모르는 형식입니다.");
+            //        break;
+            //}
+```
