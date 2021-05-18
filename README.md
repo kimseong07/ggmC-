@@ -258,3 +258,221 @@ namespace ConsoleApp1
             //        break;
             //}
 ```
+### 
+```
+using System;
+using System.Collections;
+using System.Threading;
+
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //long start = DateTime.Now.Ticks;
+            //long count = 0;
+
+            //while (start + (10000000) > DateTime.Now.Ticks)
+            //{
+            //    count++;
+            //}
+            //Console.WriteLine(count + "만큼 반복했습니다");
+
+            //int[] Array = { 1, 2, 3, 4, 5, 6 };
+
+            //for (int i = Array.Length - 1; i >= 0; i--)
+            //{
+            //        Write(Array[i] + " ");
+            //}
+
+            //for(int i = 0; i < Array.length; i++)
+            //{
+            //        WriteLine(Array[i] + " ");
+            //}
+
+            //foreach (int i in Array)
+            //{
+            //        WriteLine(i);
+            //}
+
+            //string[] array = { "사과", "배", "포도", "딸기", "바나나" };
+
+            //foreach (string item in array)
+            //{
+            //    WriteLine(item);
+            //}
+
+            //char[] i = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+
+            //foreach (char a in i)
+            //{
+            //    WriteLine(a);
+            //}
+
+
+            //int count = 10;
+            //for (int i = 0; i < count; i++)
+            //{
+            //    for (int j = 0; j < i + 1; j++)
+            //    {
+            //        Write('*');
+            //    }
+            //    WriteLine();
+            //}
+
+            //for (int i = 0; i < count; i++)
+            //{
+            //    for (int j = 0; j < count - i; j++)
+            //    {
+            //        Write(' ');
+            //    }
+            //    for (int j = 0; j < i + 1; j++)
+            //    {
+            //        Write('*');
+            //    }
+            //    WriteLine();
+            //}
+
+            //for (int i = 0; i < count; i++)
+            //{
+            //    for (int j = (count - 1) - i; j >= 0; j--)
+            //    {
+            //        Write(' ');
+            //    }
+            //    for (int j = 0; j < i + 1; j++)
+            //    {
+            //        Write('*');
+            //    }
+            //    for (int j = 0; j < i; j++)
+            //    {
+            //        Write('*');
+            //    }
+            //    WriteLine();
+            //}
+
+            //for (int i = 0; i < count; i++)
+            //{
+            //    for (int j = 0; j < count - i; j++)
+            //    {
+            //        Write(' ');
+            //    }
+            //    for (int j = 0; j < 2 * i + 1; j++)
+            //    {
+            //        Write('*');
+            //    }
+            //    WriteLine();
+            //}
+
+            //for (int i = 0; i < count; i++)
+            //{
+            //    for (int j = count - 1; j >= 0; j--)
+            //    {
+            //        for (int k = 0; k < count - i; k++)
+            //        {
+            //            Write(' ');
+            //        }
+            //        Write('*');
+            //    }
+            //    WriteLine();
+            //}
+
+            //while(true)
+            //{
+            //    Write("숫자를 입력해주세요(짝수 입력시 종료) : ");
+            //    int input = int.Parse(ReadLine());
+
+            //    if( input % 2 == 0)
+            //    {
+            //        break;
+            //    }
+            //}
+
+            //for (int i = 0; i < 100; i++)                               //goto 쓰지마셈
+            //{
+            //    for (int j = 0; j < 100; j++)
+            //    {
+            //        if (i == 50 && j == 50)
+            //        {
+            //            goto Label;
+            //        }
+            //    }
+            //Label:
+            //}
+
+            //for(int i = 0; i < 100; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        continue;
+            //    }
+            //    WriteLine(i);
+            //}
+
+            //string input = "감자 고구마 토마토";
+            //string[] inputs = input.Split(new char[] { ' ' });
+
+            //foreach (string item in inputs)
+            //{
+            //    WriteLine(item);
+            //}
+
+            //string input = " test   \n";
+            //WriteLine("::" + input.Trim() + "::");
+            //Read();
+
+            //string[] array = {"감자", "고구마", "토마토", "가지"};
+            //WriteLine(string.Join(",", array));
+
+            //WriteLine("첫 번째 출력");
+            //Thread.Sleep(1000);
+            //WriteLine("두 번째 출력");
+            //Thread.Sleep(1000);
+            //WriteLine("세 번째 출력");
+
+            //int x = 1;
+            //while (x < 50)
+            //{
+            //    Clear();
+            //    SetCursorPosition(x, 5);
+
+            //    if (x % 3 == 0)
+            //    {
+            //        WriteLine("@__");
+            //    }
+            //    else if (x % 3 == 1)
+            //    {
+            //        WriteLine("@_-");
+            //    }
+            //    else
+            //    {
+            //        WriteLine("@-_");
+            //    }
+
+            //    Thread.Sleep(100);
+            //    x++;
+            //}
+
+            //while(true)
+            //{
+            //    ConsoleKeyInfo info = ReadKey();
+            //    switch(info.Key)
+            //    {
+            //        case ConsoleKey.UpArrow:
+            //            WriteLine("위로 이동");
+            //            break;
+            //        case ConsoleKey.RightArrow:
+            //            WriteLine("우로 이동");
+            //            break;
+            //        case ConsoleKey.DownArrow:
+            //            WriteLine("아래로 이동");
+            //            break;
+            //        case ConsoleKey.LeftArrow:
+            //            WriteLine("좌로 이동");
+            //            break;
+            //        default:
+            //            return;
+            //    }
+            //}
