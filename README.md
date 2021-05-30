@@ -476,3 +476,54 @@ namespace ConsoleApp1
             //            return;
             //    }
             //}
+```
+###### level up
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using static System.Console;
+
+namespace ConsoleApp2
+{
+    class Player
+    {
+        private float level;
+        private float exp;
+
+        private void LevelUp()
+        {
+            int a = 2;
+            level = 1f;
+            if(exp != 0)
+            {
+
+                for (int i = 0; i < a; i++)
+                {
+                    level++;
+                    WriteLine("레벨업 :" + (level - 1) + "->" + level);
+                }
+            }
+        }
+        public void AddExp(float ex)
+        {
+            exp = 0;
+            exp += ex;
+            LevelUp();
+            WriteLine("현재 레벨 : " + level + " 경헙치 : ");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Player p = new Player();
+            p.AddExp(210);
+
+        }
+    }
+}
+```
