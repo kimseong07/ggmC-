@@ -496,11 +496,12 @@ namespace ConsoleApp2
 
         private void LevelUp()
         {
-            int a = 2;
+            float a = 0;
+
             level = 1f;
             if(exp != 0)
             {
-
+                a = exp;
                 for (int i = 0; i < a; i++)
                 {
                     level++;
@@ -511,7 +512,7 @@ namespace ConsoleApp2
         public void AddExp(float ex)
         {
             exp = 0;
-            exp += ex;
+            exp += ex / 100;
             LevelUp();
             WriteLine("현재 레벨 : " + level + " 경헙치 : ");
         }
@@ -526,4 +527,5 @@ namespace ConsoleApp2
         }
     }
 }
+
 ```
